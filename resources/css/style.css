@@ -1,0 +1,298 @@
+/* Universal style */
+html {
+
+    font-size: 15px;
+    font-family: 'Cantarell', sans-serif;
+    background: rgb(252,247,233);
+    background: linear-gradient(321deg, rgba(252,247,233,1) 0%, rgba(242,230,207,1) 71%); 
+    background-repeat: no-repeat;
+}
+h1 {
+   font-size: 2.5rem;
+}  
+
+h2 {
+   font-size: 2.5rem;
+   margin-bottom: 5px;
+}  
+
+h3 {
+   font-size: 2.5rem;
+}  
+
+p {
+  font-size: 1.2rem;
+}
+
+
+/* Header Section */ 
+ .header {
+    max-width: 1800px;
+    margin: 0 auto;
+ }
+
+ .navbar {
+    display: flex;
+    height: 51px;
+    padding: 16px 0;
+    margin: 0 5%;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .logo {
+    display: flex;
+    align-items: center;
+ }
+
+ .logo-img {
+    width:32px;
+    height: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+ }
+
+ .logo-img img {
+   height: 65px;
+ }
+
+ .logo-text {
+    font-size: 3rem;
+    display: block; 
+ }
+
+ .logo-text a{
+    font-family: 'Cantarell', sans-serif;
+    color:black;
+    text-decoration: none;
+ }
+
+ .navmenu {
+    display: flex;
+     align-items: center;
+     margin-left: auto;
+     padding-left: 20px;
+     margin-right: 20px;
+    
+ }
+
+ .navmenu ul{
+   
+     list-style: none;
+ }
+
+ .navmenu li{
+    display: inline-flex;
+       padding: 0 20px;
+       font-size: 1.2rem;
+       cursor: pointer;
+}
+
+.navmenu li:hover{
+ background-color: rgba(252,247,233,0.3);
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+
+ .navbtn {
+    background-color:#f5831f;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 0px;
+	text-decoration:none;
+ }
+
+ button {
+    background: transparent;
+    border: none; 
+    padding: 0 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+ .navbtn:hover {
+    background-color:#f77c18;
+ }
+
+ /* ABOUT US Section */ 
+
+ .about {
+   display: flex;
+   flex-wrap: wrap-reverse;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   max-width: 1800px;
+ }
+
+ .about img {
+   max-width: 40%;
+ }
+
+ .figurine img{
+    max-height: 700px;
+    flex: 1 2;
+ }
+
+ .about-description {
+
+    align-self: center;
+    flex: 2;
+    padding-right: 10%;
+    padding-left: 10%;
+    min-width: 300px;
+ }
+
+ .about-description h1 {
+    font-size: 2.5rem;
+ }
+
+ .about-description p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+ }
+
+ .about button {
+    background-color:#f5831f;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 20px;
+	text-decoration:none;
+ }
+
+ .about button:hover {
+    background-color:#f77c18;
+ }
+
+ /* Recipes Section */ 
+
+ .recipes {
+   margin: 80px 25px 90px 25px;
+ }
+
+ .recipes-title {
+   text-align: center;
+   width: 100%;
+ }
+
+ .recipe-box {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   
+ }
+
+
+ .box {
+  display: flex;
+  flex-direction: column;
+   border-radius: 15px;
+   width: 20%;
+   min-width: 300px;
+   margin: 25px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   position: relative;
+   justify-content: space-evenly;
+   transition: transform .7s;
+ }
+
+ .box:hover {
+   cursor: pointer;
+   transform: scale(1.03);
+  }
+
+ .box img {
+   width: 100%;
+   background: transparent;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+ }
+
+ .box h3 {
+   display: flex;
+margin: 0;
+padding: 20px;
+justify-content: center;
+text-transform: uppercase;
+font-size: 1.5rem;
+ }
+
+/* TEAM */
+
+.bgteam {
+   background: url("../images/kitchenbg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-bottom: 90px;
+}
+
+.bgoverlay {
+background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+
+}
+
+.team {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 80px;
+}
+
+.teammate {
+   display: flex;
+   flex-wrap: wrap;
+flex-direction: column;
+align-content: center;
+background-color: rgba(0, 0, 0, 0.7);
+border-radius: 15px;
+max-width: 251px;
+margin: 15px auto;
+padding-top: 20px;
+}
+
+.teammate:hover {
+   cursor: pointer;
+   transform: scale(1.03);
+  }
+
+.teammate img {
+   border-radius: 50%;
+   width: 70%;
+   align-self: center;
+}
+
+.teammate h3,
+.teammate p,
+.bgoverlay h2 {
+   color: white;
+   justify-content: center;
+   text-align: center;
+}
+
+.bgoverlay h3 {
+margin: 5px auto;
+font-size: 1.5rem;
+}
+
+.bgoverlay h2 {
+   padding-top: 60px;
+}
